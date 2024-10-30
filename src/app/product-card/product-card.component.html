@@ -1,0 +1,14 @@
+<a routerLink="/details/{{ productsInterface.id }}"
+  ><div class="card">
+    <img
+      src="../../assets/images/{{ productsInterface.name }}.jpg"
+      alt="figurine {{ productsInterface.name }}"
+    />
+    <p class="title">{{ productsInterface.name }}</p>
+    <p>
+      Figurine faite a la main du célébre
+      {{ productsInterface.name | titlecase }}
+    </p>
+    <p class="price">{{ productsInterface.price }} €</p>
+  </div></a
+>

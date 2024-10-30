@@ -1,0 +1,33 @@
+<div class="main">
+  <h1 class="title">au petit village</h1>
+  <p>
+    "Au petit village” est une entreprise qui confectionne des figurines
+    inspirées de la bande dessinée Astérix et Obélix.
+  </p>
+  <h2 class="title">nos figurines !</h2>
+  <!------sort buttons------>
+  <div id="sort">
+    <p>trier par ordre :</p>
+    <button class="button" (click)="asc()">croissant</button>
+    <button class="button" (click)="desc()">décroissant</button>
+    <!---------search box----------->
+    <label id="label" for="search">recherche :</label>
+    <input
+      type="search"
+      name="search"
+      id="search"
+      [(ngModel)]="searchtext"
+      placeholder="search"
+    />
+  </div>
+  <div class="product">
+    <app-product-card
+      *ngFor="
+        let products of productsList
+          | sortByPrice : order
+          | filterByName : searchtext
+      "
+      [productsInterface]="products"
+    ></app-product-card>
+  </div>
+</div>

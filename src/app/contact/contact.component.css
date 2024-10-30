@@ -1,0 +1,65 @@
+.container {
+  padding: 0 40em;
+  height: 100vh;
+}
+#title {
+  text-align: center;
+}
+#form {
+  border: 1px black solid;
+  border-radius: 3em;
+  padding: 2em;
+  display: grid;
+  grid-template-areas:
+    "first last"
+    "email email"
+    "message message"
+    "submit submit";
+}
+
+#firstName {
+  grid-area: first;
+}
+#lastName {
+  grid-area: last;
+}
+#mail {
+  grid-area: email;
+  padding: 3em 0;
+}
+#text {
+  grid-area: message;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 2em;
+  margin-left: 1em;
+  border-radius: 3em;
+}
+
+input[type="email"] {
+  width: 30em;
+}
+
+textarea {
+  border-radius: 2em;
+}
+
+#text {
+  display: flex;
+}
+
+#subject {
+  min-height: 10em;
+  min-width: 80%;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  resize: none;
+}
+
+#submit {
+  width: 10em;
+  margin: auto;
+  grid-area: submit;
+}

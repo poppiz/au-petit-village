@@ -1,0 +1,9 @@
+footer {
+  background-color: #da001e;
+  display: flex;
+  justify-content: end;
+}
+
+.link {
+  padding: 1em;
+}
