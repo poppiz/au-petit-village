@@ -1,0 +1,25 @@
+<div id="header">
+  <a routerLink="/">
+    <img
+      id="logo"
+      src="../../assets/Logo_au petit village.jpg"
+      alt="logo au petit village"
+    />
+  </a>
+
+  <nav id="nav">
+    <a
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="link title"
+      routerLink="/"
+      >accueil</a
+    >
+    <a [routerLinkActive]="'active'" class="link title" routerLink="/about"
+      >à propos</a
+    >
+    <a [routerLinkActive]="'active'" class="link title" routerLink="/contact"
+      >contact</a
+    >
+  </nav>
+</div>

@@ -1,0 +1,46 @@
+.main {
+  background-color: #f9d0a3;
+  padding: 0 1em 0 1em;
+  min-height: 100vh;
+}
+
+h1 {
+  padding: 2em;
+  font-size: 3em;
+}
+
+#sort {
+  display: flex;
+  align-items: center;
+}
+
+/*--------------- sort buttons---------------*/
+
+.button {
+  background-color: #fdd90b;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(15, 12, 17, 0.75);
+  padding: 0.5em;
+  margin-left: 1em;
+  border-radius: 1.2em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/*------------------- search box -------------------*/
+#label {
+  margin-left: 2em;
+}
+
+#search {
+  height: 2em;
+  margin-left: 1em;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 id="title">Contactez nous :</h2>
+  <form [formGroup]="applyForm" id="form" (submit)="submitApplication()">
+    <div id="fistName">
+      <label for="fname">Prénom :</label>
+      <input type="text" id="fname" formControlName="firstName" />
+    </div>
+    <div id="lastName">
+      <label for="lname">Nom :</label>
+      <input type="text" id="lname" formControlName="lastName" />
+    </div>
+    <div id="mail">
+      <label for="email">Email :</label>
+      <input type="email" id="email" formControlName="email" />
+    </div>
+    <div id="text">
+      <label for="subject">Sujet : </label>
+      <textarea id="subject" formControlName="subject"></textarea>
+    </div>
+    <input id="submit" type="submit" value="envoyer" />
+  </form>
+</div>
